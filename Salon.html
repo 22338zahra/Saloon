@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سالن زیبایی بانو رضوانی</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <h1>سالن زیبایی بانو رضوانی</h1>
+    <p>زیبایی در دستان حرفه‌ای ماست</p>
+  </header>
+
+  <nav>
+    <a href="#services">خدمات</a>
+    <a href="#booking">رزرو نوبت</a>
+    <a href="#about">درباره ما</a>
+    <a href="#contact">تماس با ما</a>
+  </nav>
+
+  <div class="container">
+    <section id="services" data-aos="fade-up">
+      <h2>خدمات ما</h2>
+      <div class="service-grid">
+        <div class="service" data-aos="zoom-in">
+          <img src="https://i.imgur.com/DOQFeGk.jpg" alt="شینیون">
+          <div>
+            <h3>شینیون حرفه‌ای</h3>
+            <p>مدل‌های روز دنیا برای مراسم‌ها و عروسی</p>
+          </div>
+        </div>
+        <div class="service" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://i.imgur.com/z6SL1oN.jpg" alt="میکاپ">
+          <div>
+            <h3>میکاپ تخصصی</h3>
+            <p>میکاپ شب، عروس، گریم حرفه‌ای</p>
+          </div>
+        </div>
+        <div class="service" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://i.imgur.com/81aEnkP.jpg" alt="پاکسازی پوست">
+          <div>
+            <h3>پاکسازی پوست</h3>
+            <p>فیشیال تخصصی، لایه‌برداری، ماساژ صورت</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" data-aos="fade-up">
+      <h2>رزرو نوبت</h2>
+      <form onsubmit="event.preventDefault(); alert('نوبت شما ثبت شد!');">
+        <label for="name">نام و نام خانوادگی:</label>
+        <input id="name" name="fullname" type="text" required>
+
+        <label for="phone">شماره تماس:</label>
+        <input id="phone" name="phone" type="tel" required>
+
+        <label for="service">خدمت مورد نظر:</label>
+        <select id="service" name="service" required>
+          <option>شینیون</option>
+          <option>میکاپ</option>
+          <option>پاکسازی پوست</option>
+        </select>
+
+        <label for="date">تاریخ:</label>
+        <input id="date" name="date" type="date" required>
+
+        <label for="time">ساعت:</label>
+        <input id="time" name="time" type="time" required>
+
+        <button type="submit">ثبت نوبت</button>
+      </form>
+    </section>
+
+    <section id="about" data-aos="fade-right">
+      <h2>درباره ما</h2>
+      <p>سالن زیبایی بانو رضوانی با بیش از ۱۰ سال تجربه در ارائه خدمات زیبایی با کادری حرفه‌ای در خدمت شماست.</p>
+    </section>
+
+    <section id="contact" data-aos="fade-left">
+      <h2>تماس با ما</h2>
+      <p>📍 آدرس: قم، پلاک ۰۲</p>
+      <p>📞 شماره تماس: <a href="tel:0234567">۰۲۳۴۵۶۷</a></p>
+      <p>📸 اینستاگرام: <a href="https://instagram.com/gbfdd" target="_blank">@gbfdd</a></p>
+    </section>
+  </div>
+
+  <footer data-aos="zoom-in">
+    <p>© 2025 سالن زیبایی بانو رضوانی - طراحی شده با ❤️</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
